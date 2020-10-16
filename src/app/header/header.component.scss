@@ -1,0 +1,48 @@
+@import "../../sass/variables";
+
+.header {
+  &__toolbar {
+    background-color: $color-primary-light;
+  }
+
+  &__row {
+    &--1 {
+    }
+
+    &--2 {
+    }
+  }
+
+  &__title {
+  }
+
+  &__spacer {
+    flex: 1 1 auto;
+  }
+
+  &__button {
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__links {
+    width: 100%;
+
+    ul {
+      display: table;
+      width: 100%;
+      list-style: none;
+
+      li {
+        font-size: 1.6rem;
+        display: table-cell;
+        text-align: center;
+
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+}
