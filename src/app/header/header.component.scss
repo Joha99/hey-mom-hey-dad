@@ -27,9 +27,11 @@
       list-style: none;
 
       li {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         display: table-cell;
         text-align: center;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
 
         a {
           display: block;
