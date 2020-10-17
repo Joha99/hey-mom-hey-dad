@@ -2,10 +2,11 @@
 
 .header {
   &__toolbar {
-    background-color: $color-primary-light;
+    background-color: #2b1d0e;
   }
 
   &__title {
+    color: white;
   }
 
   &__spacer {
@@ -13,6 +14,9 @@
   }
 
   &__button {
+    border-color: white;
+    color: white;
+
     &:not(:last-child) {
       margin-right: 1rem;
     }
@@ -20,6 +24,7 @@
 
   &__links {
     width: 100%;
+    color: white;
 
     ul {
       display: table;
