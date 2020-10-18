@@ -1,87 +1,79 @@
 @import "../../sass/variables";
+@import "../../sass/mixins";
 
 .home {
   display: grid;
-  height: 98vh;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr [col-end];
+  grid-template-rows: 50rem 70rem 70rem [row-end];
+}
 
-  &__section1 {
-    grid-column: 1/2;
-    position: relative;
+.box0 {
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #f9f9f9;
 
-    ul {
-      list-style: none;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: block;
-      width: 50%;
-      text-align: center;
+  &__categories {
+    @include center_horizontal_vertical;
+  }
 
-      li {
-        font-size: 1.6rem;
-        padding: 1.3rem;
+  &__list {
+    list-style: none;
+  }
 
-        &:not(:last-child) {
-          border-bottom: 1px solid black;
-        }
-      }
+  &__item {
+    padding: 2rem;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid black;
     }
   }
 
-  &__section2 {
-    grid-column: 2/5;
-    position: relative;
+  &__link {
+    &:link,
+    &:visited {
+      color: black;
+      font-size: 1.8rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+
+    &:hover,
+    &:active {
+    }
   }
+}
+
+.box1 {
+  grid-column: 2 / col-end;
+  grid-row: 1/2;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
 
   &__events {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: $color-primary-light;
-    border-radius: 5px;
-    width: 90%;
-    height: 80%;
-
-    p {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 4rem;
-    }
-  }
-
-  &__section3 {
-    grid-column: 1/5;
-    position: relative;
-  }
-
-  &__subheading {
-    display: block;
-    text-align: center;
-
-    h2 {
-      font-size: 2rem;
-    }
-  }
-
-  &__members {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    border-radius: 3px;
     width: 100%;
-    text-align: center;
+    height: 100%;
+    overflow: hidden;
   }
 
-  &__member {
-    background-color: $color-primary-light;
-    display: inline-block;
-    border: 1px solid black;
-    width: 20rem;
-    height: 30rem;
+  &__img {
+    max-width: 100%;
+    height: auto;
+    filter: blur(1px);
   }
+}
+
+.box2 {
+  grid-column: 1 / col-end;
+  grid-row: 2/3;
+  background-color: #ffecd0;
+}
+
+.box3 {
+  grid-column: 1 / col-end;
+  grid-row: 3 / row-end;
+  background-color: #f9f9f9;
+  padding: 7rem 0;
 }

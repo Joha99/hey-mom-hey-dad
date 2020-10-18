@@ -2,11 +2,13 @@
 
 .header {
   &__toolbar {
-    background-color: #2b1d0e;
+    background-color: #202020;
   }
 
   &__title {
     color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
   }
 
   &__spacer {
