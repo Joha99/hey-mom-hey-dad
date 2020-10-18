@@ -1,3 +1,8 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+@import "../../sass/utilities";
+@import "../../sass/typography";
+
 .footer {
   background-color: #202020;
   padding: 7rem 0;
@@ -49,18 +54,12 @@
   &__link {
     &:link,
     &:visited {
-      font-size: 1.4rem;
-      letter-spacing: 0.25rem;
       color: white;
+      font-size: $link-font-size;
+      font-weight: 500;
       text-decoration: none;
       text-transform: uppercase;
       display: inline-block;
-      transition: all 0.2s;
-    }
-
-    &:hover,
-    &:active {
-      transform: scale(1.3);
     }
   }
 }

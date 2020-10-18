@@ -34,15 +34,12 @@
   &__link {
     &:link,
     &:visited {
+      display: inline-block;
       color: black;
-      font-size: 1.8rem;
+      font-size: $link-font-size;
+      font-weight: 500;
       text-decoration: none;
       text-transform: uppercase;
-      display: inline-block;
-    }
-
-    &:hover,
-    &:active {
     }
   }
 }

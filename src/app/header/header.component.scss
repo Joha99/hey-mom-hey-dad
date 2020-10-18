@@ -1,4 +1,7 @@
 @import "../../sass/variables";
+@import "../../sass/mixins";
+@import "../../sass/utilities";
+@import "../../sass/typography";
 
 .header {
   &__toolbar {
@@ -6,9 +9,18 @@
   }
 
   &__title {
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
+    &-link {
+      &:link,
+      &:visited {
+        display: inline-block;
+        letter-spacing: 0.2rem;
+        color: white;
+        font-size: 2rem;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
   }
 
   &__spacer {
@@ -26,24 +38,25 @@
 
   &__links {
     width: 100%;
+  }
+
+  &__list {
+    display: table;
+    width: 100%;
+    list-style: none;
+  }
+
+  &__item {
+    display: table-cell;
+    text-align: center;
+  }
+
+  &__link {
+    display: block;
     color: white;
-
-    ul {
-      display: table;
-      width: 100%;
-      list-style: none;
-
-      li {
-        font-size: 1.8rem;
-        display: table-cell;
-        text-align: center;
-        letter-spacing: 0.1rem;
-        text-transform: uppercase;
-
-        a {
-          display: block;
-        }
-      }
-    }
+    font-size: $link-font-size;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
   }
 }
