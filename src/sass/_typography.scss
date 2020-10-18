@@ -24,6 +24,7 @@
   text-transform: uppercase;
   font-weight: bold;
   display: inline-block;
+  letter-spacing: 2px;
   // background-image: linear-gradient(
   //   to right,
   //   $color-primary-light,
@@ -31,7 +32,6 @@
   // );
   // -webkit-background-clip: text;
   // color: transparent;
-  letter-spacing: 2px;
 
   &:hover {
   }
