@@ -14,7 +14,7 @@
 .box0 {
   grid-column: 1/5;
   grid-row: 1/2;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid $color-grey-dark;
 
   &__links {
     position: relative;
@@ -38,7 +38,7 @@
   &__link {
     &:link,
     &:visited {
-      color: black;
+      color: $color-grey-dark;
       font-size: $link-font-size;
       font-weight: 500;
       text-decoration: none;
@@ -52,15 +52,34 @@
 .box1 {
   grid-column: 1/2;
   grid-row: 2/6;
-  border-right: 2px solid black;
+  border-right: 2px solid $color-grey-dark;
   padding: 2rem 0;
 
   &__profile {
     width: 85%;
     height: 50rem;
-    background-color: #f9f9eb;
     margin: 0 auto;
     border-radius: 3px;
+    border: 2px solid $color-grey-light;
+    padding: 0.9rem;
+  }
+
+  &__image {
+    width: 100%;
+    height: 50%;
+    background-color: $color-grey-light;
+  }
+
+  &__name {
+    color: $color-grey-dark;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 1rem 0;
+  }
+
+  &__description {
+    line-height: 1.5;
+    font-size: 1.2rem;
   }
 }
 
@@ -72,10 +91,24 @@
 
   &__introduction {
     width: 90%;
-    height: 23rem;
-    background-color: #f9f9eb;
+    height: 100%;
     margin: 0 auto;
     border-radius: 3px;
+    border: 2px solid $color-grey-light;
+    padding: 0.9rem;
+  }
+
+  &__heading {
+    color: $color-grey-dark;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  &__description {
+    color: $color-grey-dark;
+    font-size: 1.4rem;
+    margin-bottom: 1.7rem;
   }
 }
 
@@ -87,9 +120,27 @@
 
   &__blogs {
     width: 90%;
-    height: 95%;
-    background-color: #f9f9eb;
+    height: 100%;
     margin: 0 auto;
     border-radius: 3px;
+    border: 2px solid $color-grey-light;
+    padding: 0.9rem;
   }
+
+  &__empty-blogs {
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__message {
+    color: $color-grey-dark;
+    font-size: 2rem;
+    margin-bottom: 1.7rem;
+  }
+
+  &__btn {
+    transform: scale(0.9);
+  }
+
 }

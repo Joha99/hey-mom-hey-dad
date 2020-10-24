@@ -6,7 +6,7 @@
 .home {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr [col-end];
-  grid-template-rows: 50rem 80rem 80rem [row-end];
+  grid-template-rows: 50rem 90rem 90rem [row-end];
 }
 
 .box0 {
@@ -75,7 +75,7 @@
   grid-column: 1 / col-end;
   grid-row: 3 / row-end;
   background-color: #f9f9f9;
-  padding: 7rem 0;
+  padding-top: 12rem;
 
   &__members {
     display: table;
