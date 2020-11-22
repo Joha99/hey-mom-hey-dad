@@ -1,24 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'sass/variables';
-@import 'sass/mixins';
-@import 'sass/utilities';
-@import 'sass/typography';
+@import "./assets/sass/variables";
+@import "./assets/sass/mixins";
+@import "./assets/sass/utilities";
+@import "./assets/sass/typography";
+@import "./assets/sass/fonts";
 
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
-// This defines what 1rem is
 html {
-  font-size: 50%;
+  font-size: 16px;
 }
 
 body {
-  box-sizing: border-box;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  padding: 1rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  color: $d-4;
 }
