@@ -5,28 +5,43 @@
 @import "../../assets/sass/components/button";
 
 .footer {
+  display: flex;
+  justify-content: space-between;
   background-color: $d-4;
   color: white;
-  padding: 4rem 0rem;
+  padding: 7rem;
+}
 
-  &__text {
-    padding-bottom: 1rem;
-    border-bottom: 2px solid white;
-    margin-bottom: 1rem;
-  }
+.about {
+  flex: 0 0 40%;
+}
 
-  &__links {
-    ul {
-      list-style: none;
+.socials {
+  // flex: 0 0 30%;
+}
 
-      li {
-        display: inline-block;
-        font-size: 2rem;
+.contact {
+  // flex: 0 0 30%;
+}
 
-        &:not(:last-child) {
-          margin-right: 2rem;
-        }
-      }
+.heading {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  display: inline-block;
+  border-bottom: 3px solid $d-2;
+}
+
+.text {
+  color: $d-2;
+  font-size: 1.4rem;
+}
+
+ul {
+  list-style: none;
+
+  li {
+    &:not(:last-child) {
+      margin-bottom: 0.8rem;
     }
   }
 }

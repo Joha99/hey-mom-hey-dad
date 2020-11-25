@@ -1,5 +1,14 @@
+@import "../variables";
+
 .btn {
-  border-radius: 20px;
-  border: 2px solid white;
-  padding: 0.2rem 0.9rem;
+  border-radius: $border-radius;
+  padding: 0.4rem 1rem;
+  background-color: white;
+  color: $d-4;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $d-3;
+    color: white;
+  }
 }
