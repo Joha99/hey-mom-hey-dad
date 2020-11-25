@@ -1,8 +1,12 @@
+@import "fonts";
+@import "variables";
+
 .heading-primary {
-  // display: inline-block;
-  // border-bottom: 2px solid $d-4;
-  // font-size: 1.8rem;
-  // font-weight: 500;
+  display: inline-block;
+  padding-bottom: 0.6rem;
+  border-bottom: 4px solid $d-2;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .heading-secondary {
