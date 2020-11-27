@@ -2,13 +2,13 @@
 @import "../../assets/sass/mixins";
 @import "../../assets/sass/utilities";
 @import "../../assets/sass/typography";
-@import "../../assets/sass/components/button";
 
 .profile {
-  padding: 7rem;
   display: flex;
+  padding: 7rem;
 }
 
+// flex item
 .my-profile {
   flex: 0 0 22%;
   margin-right: 3rem;
@@ -29,13 +29,9 @@
     margin-bottom: 1.3rem;
     font-weight: 500;
   }
-
-  &__desc {
-    font-size: 1.5rem;
-    line-height: 1.4;
-  }
 }
 
+// flex item
 .content {
   // takes up remainder of space horizontally
   flex: 1;
@@ -43,23 +39,19 @@
 
 .about {
   margin-bottom: 2rem;
-  padding: 2rem;
+  padding: 2.5rem;
 
   &__heading {
+    display: inline-block;
     margin-bottom: 1rem;
     font-size: 1.8rem;
-    display: inline-block;
     border-bottom: 3px solid $d-2;
-  }
-
-  &__text {
-    font-size: 1.4rem;
   }
 }
 
 .blogs {
   height: 50rem;
-  padding: 2rem;
+  padding: 2.5rem;
 }
 
 .card {

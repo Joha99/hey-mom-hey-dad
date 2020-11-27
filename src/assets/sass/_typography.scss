@@ -10,15 +10,16 @@
 }
 
 .heading-secondary {
-  // display: inline-block;
-  // font-size: 1.3rem;
-  // font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  display: inline-block;
+  border-bottom: 3px solid $d-2;
 }
 
 .heading-tertiary {
 }
 
 .paragraph {
-  // font-size: 0.9rem;
-  // line-height: 1.5;
+  font-size: 1.5rem;
+  line-height: 1.4;
 }

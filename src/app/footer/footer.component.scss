@@ -2,46 +2,43 @@
 @import "../../assets/sass/mixins";
 @import "../../assets/sass/utilities";
 @import "../../assets/sass/typography";
-@import "../../assets/sass/components/button";
 
+// flex container
 .footer {
   display: flex;
   justify-content: space-between;
   background-color: $d-4;
   color: white;
   padding: 7rem;
+
+  &__text {
+    color: $d-2;
+  }
 }
 
+// flex item
 .about {
   flex: 0 0 40%;
 }
 
-.socials {
-  // flex: 0 0 30%;
-}
-
-.contact {
-  // flex: 0 0 30%;
-}
-
-.heading {
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
-  display: inline-block;
-  border-bottom: 3px solid $d-2;
-}
-
-.text {
+// links
+.nav {
   color: $d-2;
-  font-size: 1.4rem;
-}
 
-ul {
-  list-style: none;
+  &__list {
+    list-style: none;
+  }
 
-  li {
+  &__item {
     &:not(:last-child) {
       margin-bottom: 0.8rem;
     }
+  }
+
+  &__link:link,
+  &__link:active,
+  &__link:visited {
+    text-decoration: none;
+    color: inherit;
   }
 }
