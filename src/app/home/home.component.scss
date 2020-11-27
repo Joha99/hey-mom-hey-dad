@@ -3,47 +3,48 @@
 @import "../../assets/sass/utilities";
 @import "../../assets/sass/typography";
 
+// flex container
 .home {
   padding: 3rem 7rem;
-
-  &__banner {
-    position: relative;
-    background-color: $d-3;
-    border-radius: $border-radius;
-    color: white;
-    height: 38rem;
-
-    &--text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      line-height: 1.5;
-    }
-
-    &--heading {
-      font-weight: 700;
-      font-size: 3rem;
-    }
-  }
-
-  &__members {
-    padding: 17rem 0rem;
-  }
 }
 
-.cards {
-  display: flex;
-  justify-content: space-between;
-}
-
-.card {
-  box-shadow: 0px 1px 20px rgba($d-3, 0.1);
+// flex item
+.banner {
+  position: relative;
+  background-color: $d-2;
   border-radius: $border-radius;
-  flex: 0 0 25rem;
-  overflow: hidden;
+  box-shadow: 0px 1px 20px rgba($d-3, 0.1);
+  height: 38rem;
 
-  [class^="card__picture"] {
+  &__text {
+    @include absCenter;
+  }
+
+  &__heading {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+}
+
+// flex item
+.members {
+  padding: 13rem 0rem;
+
+  // flex container
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // flex item
+  &__card {
+    flex: 0 0 25rem;
+    box-shadow: 0px 1px 20px rgba($d-3, 0.1);
+    border-radius: $border-radius;
+    overflow: hidden;
+  }
+
+  [class^="members__picture"] {
     height: 20rem;
     position: relative;
     overflow: hidden;
