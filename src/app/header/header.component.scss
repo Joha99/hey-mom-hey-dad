@@ -9,28 +9,52 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 1.5rem 3.5rem;
+  padding: 0rem 7rem;
   background-color: $d-4;
   color: white;
+  height: 7rem;
+}
 
-  &__title {
-    font-size: 1.7rem;
-    font-weight: 700;
+// flex item
+.title {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+// flex item & container
+.links {
+  font-size: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+
+// flex item & container
+.actions {
+  font-size: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+
+.nav {
+  list-style: none;
+  height: 100%;
+  display: flex;
+
+  &__item {
+    padding: 1.5rem;
+    transition: all 0.2s;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  &__links, &__btns {
-    font-size: 1.4rem;
-    ul {
-      list-style: none;
-
-      li {
-        display: inline-block;
-
-        &:not(:last-child) {
-          margin-right: 2rem;
-        }
-      }
-    }
+  &__item:hover {
+    background-color: $d-3;
   }
 }
