@@ -12,6 +12,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { ProfileComponent } from './profile/profile.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { EventsComponent } from './events/events.component';
+import { ServicesComponent } from './services/services.component';
+import { ProductsComponent } from './products/products.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +25,11 @@ import { ProfileComponent } from './profile/profile.component';
     HeaderComponent,
     FooterComponent,
     ProfileComponent,
+    AboutUsComponent,
+    EventsComponent,
+    ServicesComponent,
+    ProductsComponent,
+    ContactsComponent,
   ],
   imports: [
     BrowserModule,

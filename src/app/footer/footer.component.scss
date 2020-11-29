@@ -10,10 +10,6 @@
   background-color: $d-4;
   color: white;
   padding: 7rem;
-
-  &__text {
-    color: $d-2;
-  }
 }
 
 // flex item
@@ -41,4 +37,8 @@
     text-decoration: none;
     color: inherit;
   }
+}
+
+.paragraph {
+  color: $d-2;
 }
